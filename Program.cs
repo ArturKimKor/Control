@@ -7,3 +7,12 @@
         string[] resultArray = GetShortStrings(inputArray);
         Console.WriteLine($"Результат: [{string.Join(", ", resultArray)}]");
     }
+    static string[] GetShortStrings(string[] array)
+    {
+        int count = 0;
+        foreach (string str in array)
+        {
+            if (str.Trim().Length <= 3)
+                count++;
+        }
+
