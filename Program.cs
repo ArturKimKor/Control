@@ -1,4 +1,4 @@
-﻿{
+﻿
     static void Main()
     {
         Console.WriteLine("Введите элементы массива через запятую:" );
@@ -18,5 +18,19 @@
     }
         string[] result = new string[count];
         int index = 0;
+            // Заполняем новый массив строками длиной ≤ 3
+        foreach (string str in array)
+        {
+            if (str.Trim().Length <= 3)
+            {
+                result[index] = str.Trim();
+                index++;
+            }
+        }
+
+        return result;
+    }
+
+
 
 
