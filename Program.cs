@@ -15,4 +15,8 @@
             if (str.Trim().Length <= 3)
                 count++;
         }
+    }
+        string[] result = new string[count];
+        int index = 0;
+
 
